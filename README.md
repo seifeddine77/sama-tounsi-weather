@@ -136,8 +136,8 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de
 ## 👨‍💻 Auteur
 
 **Votre Nom**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Votre Profil](https://linkedin.com/in/yourprofile)
+- GitHub: [@yourusername](https://github.com/seifeddine77)
+- LinkedIn: [Votre Profil](www.linkedin.com/in/seif-eddine-rezgui-6769841b6)
 
 ## 🙏 Remerciements
 
