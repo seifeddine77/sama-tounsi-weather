@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond dégradé -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764BA2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Fond arrondi -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGradient)"/>
+  
+  <!-- Soleil -->
+  <g transform="translate(150, 150)">
+    <!-- Rayons du soleil -->
+    <g opacity="0.8">
+      <rect x="95" y="10" width="10" height="30" rx="5" fill="url(#sunGradient)"/>
+      <rect x="95" y="160" width="10" height="30" rx="5" fill="url(#sunGradient)"/>
+      <rect x="10" y="95" width="30" height="10" rx="5" fill="url(#sunGradient)"/>
+      <rect x="160" y="95" width="30" height="10" rx="5" fill="url(#sunGradient)"/>
+      <!-- Rayons diagonaux -->
+      <rect x="145" y="35" width="10" height="25" rx="5" transform="rotate(45 150 40)" fill="url(#sunGradient)"/>
+      <rect x="45" y="35" width="10" height="25" rx="5" transform="rotate(-45 50 40)" fill="url(#sunGradient)"/>
+      <rect x="145" y="145" width="10" height="25" rx="5" transform="rotate(-45 150 150)" fill="url(#sunGradient)"/>
+      <rect x="45" y="145" width="10" height="25" rx="5" transform="rotate(45 50 150)" fill="url(#sunGradient)"/>
+    </g>
+    <!-- Corps du soleil -->
+    <circle cx="100" cy="100" r="50" fill="url(#sunGradient)" filter="url(#shadow)"/>
+  </g>
+  
+  <!-- Nuage -->
+  <g transform="translate(200, 250)" filter="url(#shadow)">
+    <!-- Nuage principal -->
+    <ellipse cx="80" cy="80" rx="60" ry="40" fill="white" opacity="0.95"/>
+    <ellipse cx="130" cy="80" rx="80" ry="50" fill="white" opacity="0.95"/>
+    <ellipse cx="180" cy="85" rx="55" ry="35" fill="white" opacity="0.95"/>
+    <ellipse cx="110" cy="100" rx="90" ry="40" fill="white" opacity="0.95"/>
+  </g>
+  
+  <!-- Gouttes de pluie -->
+  <g transform="translate(230, 350)">
+    <path d="M20,20 Q20,10 25,5 Q30,10 30,20 Q30,30 25,35 Q20,30 20,20" fill="#4FC3F7" opacity="0.8"/>
+    <path d="M60,30 Q60,20 65,15 Q70,20 70,30 Q70,40 65,45 Q60,40 60,30" fill="#4FC3F7" opacity="0.8"/>
+    <path d="M100,20 Q100,10 105,5 Q110,10 110,20 Q110,30 105,35 Q100,30 100,20" fill="#4FC3F7" opacity="0.8"/>
+  </g>
+</svg>
